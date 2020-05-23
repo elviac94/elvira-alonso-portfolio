@@ -1,0 +1,14 @@
+@import './normalize.scss';
+@import './header.scss';
+
+.App {
+  text-align: center;
+  background-color: palevioletred;
+}
+.landing__name{
+  color: white  ;
+  display: block;
+  margin-bottom: 5px;
+}
+
+

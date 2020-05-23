@@ -1,0 +1,11 @@
+.header__container{
+    background-color: palevioletred;
+    color: white;
+    width: 100%;
+    
+    & .header__list{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

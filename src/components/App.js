@@ -1,12 +1,21 @@
 import React from 'react';
 import InitialPage from './Landing';
+import ProjectsList from './ProjectsList';
+import { Switch, Route } from 'react-router-dom';
 import '../stylesheets/App.scss';
 
 
-const App=() =>{
+const App = () => {
   return (
     <div className="App">
-      <InitialPage/>
+      <Switch>
+        <Route exact path='/'>
+          <InitialPage />
+        </Route>
+        <Route path='/projects'>
+          <ProjectsList />
+        </Route>
+      </Switch>
     </div>
   );
 }

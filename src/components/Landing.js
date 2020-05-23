@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import Typed from 'react-typed';
 
 
@@ -19,6 +20,7 @@ const InitialPage = () => {
                 backSpeed={70}
                 loop />
         </div>
+        <Footer/>
         </>
     )
 }

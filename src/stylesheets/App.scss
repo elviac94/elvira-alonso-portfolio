@@ -1,10 +1,15 @@
 @import './normalize.scss';
 @import './header.scss';
 @import './footer.scss';
+@import './projectsList';
+@import './projectCard';
 
 .App {
   text-align: center;
   background-color: palevioletred;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
 }
 .landing__name{
   color: white  ;

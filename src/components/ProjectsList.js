@@ -5,7 +5,6 @@ import ProjectCard from './ProjectCard';
 
 
 const ProjectsList = (props) => {
-    console.log(props.data)
     const { data } = props;
     return (
         <>
@@ -14,6 +13,7 @@ const ProjectsList = (props) => {
                 {data.map((projectObject) =>(
                     <li className="projectCard__parentContainer" key={projectObject.id}>
                     <ProjectCard
+                        id={projectObject.id}
                         name={projectObject.name}
                         description={projectObject.description}
                         URL = {projectObject.URL}

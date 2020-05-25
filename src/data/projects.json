@@ -17,6 +17,12 @@
             "name":"Proyecto de código heredado",
             "description":"Proyecto grupal de una web de un generador de tarjetas de presentación partiendo de un código heredado. Implementado React y SASS.",
             "URL": "https://github.com/elviac94/project-promo-i-module-3-team-4-afternoon"
+        },
+        {
+            "id":4,
+            "name":"Buscador de personajes Rick & Morty",
+            "description":"Proyecto individual de un buscador de personajes. Implementado React y SASS.",
+            "URL": "https://github.com/elviac94/modulo-3-evaluacion-final-elviac94"
         }
     ]
 }

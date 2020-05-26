@@ -11,9 +11,17 @@
         & .header__list--link{
             text-decoration: none;
 
+            & .header__list--home{
+                color: white;
+            }
+        
             & .header__list--work{
                 color: white;
             }
         }
     }
+}
+
+.hidden{
+    display: none;
 }

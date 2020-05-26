@@ -1,14 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+// import Footer from './Footer';
+// import Header from './Header';
 import ProjectCard from './ProjectCard';
 
 
 const ProjectsList = (props) => {
     const { data } = props;
     return (
-        <>
-            <Header />
             <ul className="projects__container">
                 {data.map((projectObject) =>(
                     <li className="projectCard__parentContainer" key={projectObject.id}>
@@ -22,8 +20,6 @@ const ProjectsList = (props) => {
                 )
                 )}
             </ul>
-            <Footer />
-        </>
     )
 }
 export default ProjectsList;

@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import InitialPage from './Landing';
+import Header from './Header';
+import Footer from './Footer';
 import ProjectsList from './ProjectsList';
 import { Switch, Route } from 'react-router-dom';
 import projects from '../data/projects.json';
@@ -10,6 +12,7 @@ const App = () => {
   const [data, setData] = useState(projects.projects)
   return (
     <div className="App">
+      <Header />
       <Switch>
         <Route exact path='/'>
           <InitialPage />
@@ -20,6 +23,7 @@ const App = () => {
            />
         </Route>
       </Switch>
+      <Footer/>
     </div>
   );
 }

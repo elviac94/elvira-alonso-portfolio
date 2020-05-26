@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 import Typed from 'react-typed';
 
 
 const InitialPage = () => {
     return (
-        <>
-        <Header />
         <div className="landing__container">
             <Typed className="landing__name" strings={['Elvira María Alonso Cervilla']}
                 typeSpeed={80}
@@ -20,8 +18,6 @@ const InitialPage = () => {
                 backSpeed={70}
                 loop />
         </div>
-        <Footer/>
-        </>
     )
 }
 export default InitialPage;

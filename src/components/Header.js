@@ -6,7 +6,6 @@ const Header = () => {
     const toggleHidden = (event) => {
         const option = event.currentTarget.className
         const headerOptions = document.querySelectorAll('.header__list--link > li');
-        //const home = document.querySelector('.header__list--home')
         headerOptions.forEach(headerOption => {
             if (headerOption.className === option) {
                 headerOption.parentElement.classList.add('hidden')

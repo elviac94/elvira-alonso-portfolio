@@ -1,32 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+    const { selection } = props;
 
-    const toggleHidden = (event) => {
-        const option = event.currentTarget.className
+    useEffect(() => {
+        console.log('useEffect called')
+        console.log(selection)
         const headerOptions = document.querySelectorAll('.header__list--link > li');
         headerOptions.forEach(headerOption => {
-            if (headerOption.className === option) {
+            console.log(headerOption.className.includes(selection))
+            if (headerOption.className.includes(selection)) {
                 headerOption.parentElement.classList.add('hidden')
             } else {
                 headerOption.parentElement.classList.remove('hidden')
             }
         })
-    }
+    })
 
     return (
         <header className="header__container">
             <nav className="header__menu">
                 <ul className="header__list">
-                    <Link className="header__list--link hidden" to='/'>
-                        <li className="header__list--home" onClick={toggleHidden}>Home</li>
+                    <Link className="header__list--link " to='/'>
+                        <li className="header__list--home">Home</li>
                     </Link>
-                    <li className="header__list--about" onClick={toggleHidden}>About</li>
-                    <Link className="header__list--link" to='projects'>
-                        <li className="header__list--work" onClick={toggleHidden}>Work</li>
+                    <li className="header__list--about">About</li>
+                    <Link className="header__list--link " to='projects'>
+                        <li className="header__list--work">Work</li>
                     </Link>
-                    <li className="header__list--contact" onClick={toggleHidden}>Contact</li>
+                    <li className="header__list--contact">Contact</li>
                 </ul>
             </nav>
         </header>

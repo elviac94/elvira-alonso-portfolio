@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, Component } from 'react';
 import InitialPage from './Landing';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,21 +9,33 @@ import '../stylesheets/App.scss';
 
 
 const App = () => {
-  const [data, setData] = useState(projects.projects)
+
+  const [data, setData] = useState(projects.projects);
+  const [selection, setSelection] = useState('home')
+
+  const componentShown = (component) => {
+    console.log('componentShown')
+    console.log(component)
+    if (component !== selection) {
+      setSelection(component)
+    }
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header selection={selection} />
       <Switch>
         <Route exact path='/'>
-          <InitialPage />
+          <InitialPage onShow={componentShown} />
         </Route>
         <Route path='/projects'>
           <ProjectsList
-           data={data}
-           />
+            onShow={componentShown}
+            data={data}
+          />
         </Route>
       </Switch>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

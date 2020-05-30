@@ -1,10 +1,12 @@
-import React from 'react';
-// import Header from './Header';
-// import Footer from './Footer';
+import React, { useEffect } from 'react';
 import Typed from 'react-typed';
 
 
-const InitialPage = () => {
+const InitialPage = (props) => {
+    const { onShow } = props;
+
+    useEffect(() => onShow('home'))
+
     return (
         <div className="landing__container">
             <Typed className="landing__name" strings={['Elvira María Alonso Cervilla']}

@@ -23,7 +23,9 @@ const Header = (props) => {
                     <Link className="header__list--link " to='/'>
                         <li className="header__list--home">Home</li>
                     </Link>
+                    <Link className="header__list--link " to='/about'>
                     <li className="header__list--about">About</li>
+                    </Link>
                     <Link className="header__list--link " to='projects'>
                         <li className="header__list--work">Work</li>
                     </Link>

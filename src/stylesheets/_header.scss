@@ -14,11 +14,45 @@
 
             & .header__list--home{
                 color: white;
+                background-image: linear-gradient(white, white);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
             }
+
+            & .header__list--home:hover{
+                background-size: 100% 2px;
+            }
+
+
         
             & .header__list--work{
                 color: white;
+                background-image: linear-gradient(white, white);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
             }
+
+            & .header__list--work:hover{
+                background-size: 100% 2px;
+            }
+
+            & .header__list--about{
+                color: white;
+                background-image: linear-gradient(white, white);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+            }
+
+            & .header__list--about:hover{
+                background-size: 100% 2px;
+            }
+
         }
     }
 }

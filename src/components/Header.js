@@ -5,8 +5,6 @@ const Header = (props) => {
     const { selection } = props;
 
     useEffect(() => {
-        console.log('useEffect called')
-        console.log(selection)
         const headerOptions = document.querySelectorAll('.header__list--link > li');
         headerOptions.forEach(headerOption => {
             console.log(headerOption.className.includes(selection))

@@ -14,8 +14,6 @@ const App = () => {
   const [selection, setSelection] = useState('home')
 
   const componentShown = (component) => {
-    console.log('componentShown')
-    console.log(component)
     if (component !== selection) {
       setSelection(component)
     }

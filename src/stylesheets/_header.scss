@@ -1,20 +1,25 @@
 .header__container{
-    background-color: palevioletred;
-    color: white;
+    background-color: white;
+    color: #ff1fad;
+    text-transform: uppercase;
     width: 100%;
+    height: 75px;
     margin-bottom: 20px;
     
     & .header__list{
         width: 100%;
+        height: 75px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
         & .header__list--link{
             text-decoration: none;
 
             & .header__list--home{
-                color: white;
-                background-image: linear-gradient(white, white);
+                color: #ff1fad;
+                font-weight: bold;
+                background: linear-gradient(#ff1fad, white);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
@@ -28,8 +33,9 @@
 
         
             & .header__list--work{
-                color: white;
-                background-image: linear-gradient(white, white);
+                color: #ff1fad;
+                font-weight: bold;
+                background-image: linear-gradient(#ff1fad, white);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
@@ -41,8 +47,9 @@
             }
 
             & .header__list--about{
-                color: white;
-                background-image: linear-gradient(white, white);
+                color: #ff1fad;
+                font-weight: bold;
+                background-image: linear-gradient(#ff1fad, white);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;

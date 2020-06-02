@@ -4,9 +4,22 @@ import { Link } from 'react-router-dom';
 const Header = (props) => {
     const { selection } = props;
 
-    useEffect(() => {
-        const headerOptions = document.querySelectorAll('.header__list--link > li');
-        headerOptions.forEach(headerOption => {
+    // useEffect(() => {
+    //     const headerOptions = document.querySelectorAll('.header__list--link > li');
+    //     headerOptions.forEach(headerOption => {
+    //         console.log(headerOption.className.includes(selection))
+    //         if (headerOption.className.includes(selection)) {
+    //           headerOption.parentElement.classList.add('hidden')
+    //         } else {
+    //             headerOption.parentElement.classList.remove('hidden')
+    //         }
+    //     })
+    // })
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            const headerOptions = document.querySelectorAll('.header__list--link > li');
+            headerOptions.forEach(headerOption => {
             console.log(headerOption.className.includes(selection))
             if (headerOption.className.includes(selection)) {
               headerOption.parentElement.classList.add('hidden')
@@ -14,7 +27,8 @@ const Header = (props) => {
                 headerOption.parentElement.classList.remove('hidden')
             }
         })
-    })
+        },1000)
+        })
 
     return (
         <header className="header__container">

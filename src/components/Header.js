@@ -9,7 +9,7 @@ const Header = (props) => {
         headerOptions.forEach(headerOption => {
             console.log(headerOption.className.includes(selection))
             if (headerOption.className.includes(selection)) {
-                headerOption.parentElement.classList.add('hidden')
+              headerOption.parentElement.classList.add('hidden')
             } else {
                 headerOption.parentElement.classList.remove('hidden')
             }

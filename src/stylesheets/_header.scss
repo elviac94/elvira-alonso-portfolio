@@ -15,55 +15,43 @@
 
         & .header__list--link{
             text-decoration: none;
+            color: #ff1fad;
+            cursor: pointer;
+            font-weight: bold;
+            background: linear-gradient(#ff1fad,#ff1fad);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.1s;
 
-            & .header__list--home{
-                color: #ff1fad;
-                font-weight: bold;
-                background: linear-gradient(#ff1fad, white);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;
-            }
+            &:hover,
+            &:focus{
+                // background-size: 100% 2px;
+                // color: #ff1fad;
+                // opacity: .5;
+                // transform: scale3d(0.9, 0.9, 1)
+                color:red;
+                }
 
-            & .header__list--home:hover{
-                background-size: 100% 2px;
-            }
-
-
-        
-            & .header__list--work{
-                color: #ff1fad;
-                font-weight: bold;
-                background-image: linear-gradient(#ff1fad, white);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;
-            }
-
-            & .header__list--work:hover{
-                background-size: 100% 2px;
-            }
-
-            & .header__list--about{
-                color: #ff1fad;
-                font-weight: bold;
-                background-image: linear-gradient(#ff1fad, white);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;
-            }
-
-            & .header__list--about:hover{
-                background-size: 100% 2px;
-            }
-
+        }
+        .header__list--link:hover,
+        .header__list--link:focus,
+        .header__list--link:active{
+            background-size: 100% 2px;
+            color: #ff1fad;
+            opacity: .5;
+            transform: scale3d(0.9, 0.9, 1)
         }
     }
 }
 
 .hidden{
-    display: none;
+     display: none;
+}
+
+.efecto{
+    background-size: 100% 2px;
+            color: #ff1fad;
+            opacity: .5;
+            transform: scale3d(0.9, 0.9, 1)
 }

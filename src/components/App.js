@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import InitialPage from './Landing';
 import Header from './Header';
 import Footer from './Footer';

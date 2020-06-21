@@ -7,7 +7,6 @@ const Header = (props) => {
         setTimeout(() => {
             const headerOptions = document.querySelectorAll('.header__list--link > li');
             headerOptions.forEach(headerOption => {
-                console.log(headerOption.className.includes(selection))
                 if (headerOption.className.includes(selection)) {
                     headerOption.parentElement.classList.add('hidden')
                 } else {

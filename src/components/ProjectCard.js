@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
 
     return (
         <div className="projectcard__container" id={id} onClick={flipCard}>
-            <img src={source}/>
+            <img src={source} alt={name}/>
             <div className="front">
                 <div>
                 <h4 className="project__name">{name}</h4>

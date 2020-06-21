@@ -14,6 +14,7 @@ const ProjectsList = (props) => {
                     <ProjectCard
                         id={projectObject.id}
                         name={projectObject.name}
+                        source={projectObject.source}
                         description={projectObject.description}
                         URL={projectObject.URL}
                     />

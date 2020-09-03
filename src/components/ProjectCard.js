@@ -6,10 +6,12 @@ const ProjectCard = (props) => {
     
     const flipCard = (event) => {
         const selectedProject = event.currentTarget.id;
-        const projecItems = document.querySelectorAll('.projectcard__container');
-        projecItems.forEach(projectItem =>
-            projectItem.id === selectedProject ? projectItem.classList.toggle('rotate') : projectItem.classList.remove('rotate'))
+        // const projecItems = document.querySelectorAll('.projectcard__container');
+        // projecItems.forEach(projectItem =>
+        //     projectItem.id === selectedProject ? projectItem.classList.toggle('rotate') : projectItem.classList.remove('rotate'))
     }
+
+    const tecnologyes=tags.split(',') 
 
     return (
         <div className="projectcard__container" id={id} onClick={flipCard}>
@@ -22,7 +24,7 @@ const ProjectCard = (props) => {
             </div>
             <div className="back">
                 {/* <h3 className="project__name">{name}</h3> */}
-                <p className="project__description">{tags}</p>
+                <p className="project__description">{tecnologyes}</p>
                 <a className="project__link" href={URL} target="blank">Enlace al proyecto</a>
             </div>
         </div>

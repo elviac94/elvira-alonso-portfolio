@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media all and (min-width:768px){
         display: flex;
@@ -14,6 +16,10 @@
     & .projectCard__parentContainer{
          width: 100%;
          padding: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
         //  height: 156px;
         //  -webkit-perspective: 1000px;
         //  perspective: 1000px;

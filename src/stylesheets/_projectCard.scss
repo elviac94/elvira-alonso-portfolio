@@ -136,6 +136,8 @@
   position: absolute;
   bottom: 42%;
   left: 25px;
+  width: 100%;
+  max-width: 400px;
   text-align: left;
   opacity: 0;
   // padding: 5px 60px 5px 10px;
@@ -146,12 +148,16 @@
 
 .projectcard__container .back ul {
   margin-left: 5px ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.projectcard__container .back a{
- color: #ffffff;
+// .projectcard__container .back a{
+//  color: #ffffff;
  
-}
+// }
 
 // figure.snip1477 a {
 //   position: absolute;

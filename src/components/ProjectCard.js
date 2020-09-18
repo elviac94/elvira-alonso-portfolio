@@ -20,15 +20,15 @@ const ProjectCard = (props) => {
                 <div className="front__projects">
                     <h4 className="project__name">{name}</h4>
                     <div className="project__link--container">
-                        <a className="project__link" href={URL} target="blank"><i class="fas fa-code"></i></a>
-                        <a className="project__link" href={demo} target="blank"><i class="far fa-desktop"></i></a>
+                        <a className="project__link" href={URL} target="blank"><i className="fas fa-code"></i></a>
+                        <a className="project__link" href={demo} target="blank"><i className="far fa-desktop"></i></a>
                     </div>
                 </div>
 
             </div>
             <div className="back">
                 {/* <h3 className="project__name">{name}</h3> */}
-                <ul className="project__description">{tecnologies.map(tecnology => <li>{tecnology}</li>
+                <ul className="project__description">{tecnologies.map(tecnology => <li key={tecnology}>{tecnology}</li>
                 )}</ul>
             </div>
         </div>

@@ -6,7 +6,8 @@
             "source":"../images/series-finder-js.png",
             "tags":"HTML5,CSS,SASS,Responsive",
             "description":"Proyecto grupal de una web responsive de desarrolladoras front-end junior,implementando HTML5 y CSS(SASS). ",
-            "URL": "https://github.com/elviac94/project-promo-i-module-1-team-1-afternoon"
+            "URL": "https://github.com/elviac94/project-promo-i-module-1-team-1-afternoon",
+            "demo":"http://beta.adalab.es/project-promo-i-module-1-team-1-afternoon/"
         },
         {
             "id":2,
@@ -14,7 +15,8 @@
             "source":"../images/series-finder-js.png",
             "tags":"HTML5,CSS,SASS,Responsive,JavaScript",
             "description":"Proyecto grupal de una web de un generador de tarjetas de presentación , compartible en twitter. Implememtando HTML, SASS y JavaScript.",
-            "URL": "https://github.com/elviac94/project-promo-i-module-2-team-3-afternoon"
+            "URL": "https://github.com/elviac94/project-promo-i-module-2-team-3-afternoon",
+            "demo":"http://beta.adalab.es/project-promo-i-module-2-team-3-afternoon/"
         },
         {
             "id":3,
@@ -22,7 +24,8 @@
             "source":"../images/series-finder-js.png",
             "tags":"HTML5,CSS,SASS,Responsive,JavaScript",
             "description":"Series finder it's a project developed with  HTML5, CSS3, SASS, ES6 JavaScript also includes REST Api tecnology. You can search a serie and add to favourite list, if you  dont  like the serie anymore, just delete it of the favourite list.",
-            "URL": "https://github.com/elviac94/modulo-2-evaluacion-final-elviac94"
+            "URL": "https://github.com/elviac94/modulo-2-evaluacion-final-elviac94",
+            "demo":"https://elviac94.github.io/modulo-2-evaluacion-final-elviac94/"
         },
         {
             "id":4,
@@ -30,7 +33,8 @@
             "source":"../images/series-finder-js.png",
             "tags":"React,CSS,SASS,Responsive",
             "description":"Proyecto grupal de una web de un generador de tarjetas de presentación partiendo de un código heredado. Implementado React y SASS.",
-            "URL": "https://github.com/elviac94/project-promo-i-module-3-team-4-afternoon"
+            "URL": "https://github.com/elviac94/project-promo-i-module-3-team-4-afternoon",
+            "demo":"http://beta.adalab.es/project-promo-i-module-3-team-4-afternoon/#/"
         },
         {
             "id":5,
@@ -38,7 +42,8 @@
             "source":"../images/rick-morty.png",
             "tags":"React,CSS,SASS,Responsive",
             "description":"Proyecto individual de un buscador de personajes. Implementado React y SASS.",
-            "URL": "https://github.com/elviac94/modulo-3-evaluacion-final-elviac94"
+            "URL": "https://github.com/elviac94/modulo-3-evaluacion-final-elviac94",
+            "demo":"http://beta.adalab.es/modulo-3-evaluacion-final-elviac94/#/"
         }
     ]
 }

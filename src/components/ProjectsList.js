@@ -18,6 +18,7 @@ const ProjectsList = (props) => {
                         description={projectObject.description}
                         tags={projectObject.tags}
                         URL={projectObject.URL}
+                        demo={projectObject.demo}
                     />
                 </li>
             )

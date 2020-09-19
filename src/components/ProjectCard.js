@@ -1,5 +1,4 @@
 import React from 'react';
-// import series from '../images/series-finder-js.png'
 
 const ProjectCard = (props) => {
     const { name, description, URL, id, source, tags, demo } = props;
@@ -15,7 +14,10 @@ const ProjectCard = (props) => {
 
     return (
         <div className="projectcard__container" id={id} onClick={flipCard}>
-            <img src={source} alt={name} />
+            <div className="picture__container">
+            <img src={source} alt={name}/>
+            </div>
+            
             <div className="front">
                 <div className="front__projects">
                     <h4 className="project__name">{name}</h4>

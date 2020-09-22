@@ -9,24 +9,23 @@ const ProjectsList = (props) => {
     useEffect(() => onShow('work'))
 
     const optionButtons = ['All', 'JavaScript', 'React']
-    const [ filterLanguage, setFilterLanguage ]= useState('All')
+    const [filterLanguage, setFilterLanguage] = useState('All')
 
-    const handleFilter=(nameButton)=>{
+    const handleFilter = (nameButton) => {
         setFilterLanguage(nameButton)
     }
-    useEffect(()=>console.log(filterLanguage))
+
+    useEffect(() => console.log(filterLanguage))
 
     return (
         <>
             <div className="buttons__container">
                 {optionButtons.map(optionButton => <Button handleFilter={handleFilter} key={optionButton} buttonName={optionButton} />)
                 }
-
             </div>
-
             <ul className="projects__container">
-                {data.map((projectObject) => projectObject.tags.includes(filterLanguage)? (
-                    <li className="projectCard__parentContainer" key={projectObject.id}>
+                {data.filter((projectObject) => projectObject.tags.includes(filterLanguage) || (!projectObject.tags.includes(filterLanguage) && filterLanguage === 'All'))
+                     .map(projectObject => <li className="projectCard__parentContainer" key={projectObject.id}>
                         <ProjectCard
                             id={projectObject.id}
                             name={projectObject.name}
@@ -36,21 +35,7 @@ const ProjectsList = (props) => {
                             URL={projectObject.URL}
                             demo={projectObject.demo}
                         />
-                    </li>
-                ): (!projectObject.tags.includes(filterLanguage)&& filterLanguage==='All')? (
-                    <li className="projectCard__parentContainer" key={projectObject.id}>
-                    <ProjectCard
-                        id={projectObject.id}
-                        name={projectObject.name}
-                        source={projectObject.source}
-                        description={projectObject.description}
-                        tags={projectObject.tags}
-                        URL={projectObject.URL}
-                        demo={projectObject.demo}
-                    />
-                </li> 
-                ):''
-                )}
+                    </li>)}
             </ul>
         </>
     )

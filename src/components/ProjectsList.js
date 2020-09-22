@@ -15,8 +15,6 @@ const ProjectsList = (props) => {
         setFilterLanguage(nameButton)
     }
 
-    useEffect(() => console.log(filterLanguage))
-
     return (
         <>
             <div className="buttons__container">

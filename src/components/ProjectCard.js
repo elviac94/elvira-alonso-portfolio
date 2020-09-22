@@ -9,7 +9,6 @@ const ProjectCard = (props) => {
         // projecItems.forEach(projectItem =>
         //     projectItem.id === selectedProject ? projectItem.classList.toggle('rotate') : projectItem.classList.remove('rotate'))
     }
-
     const tecnologies = tags.split(',')
 
     return (

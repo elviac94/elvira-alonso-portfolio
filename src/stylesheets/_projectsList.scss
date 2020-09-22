@@ -10,8 +10,9 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 500px;
     }
 
     & .projectCard__parentContainer{
@@ -29,4 +30,13 @@
         //  border: solid black 3px;
 
     }
+}
+
+.buttons__container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }

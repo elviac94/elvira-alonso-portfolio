@@ -1,17 +1,18 @@
 button{
     background-color: #EE7164;
-    width: 100px;
+    width: 80px;
     height: 40px;
     border-radius: 30px;
     color: #F1EED6;
     border: #EE7164;
-    box-shadow: 2px 2px 6px 4px #c4bcc4;
+    box-shadow: 2px 1px 2px 2px #c4bcc4;
     cursor: pointer;
     outline: none;
     -webkit-tap-highlight-color: transparent;
+    font-size: 12px;
 
     &:hover{
-        transform: scale(1.15,1.15);
+        transform: scale(1.10,1.10);
     }
     &:active {
         box-shadow: none;

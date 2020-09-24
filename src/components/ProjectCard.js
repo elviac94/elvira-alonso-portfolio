@@ -3,16 +3,10 @@ import React from 'react';
 const ProjectCard = (props) => {
     const { name, description, URL, id, source, tags, demo } = props;
 
-    const flipCard = (event) => {
-        const selectedProject = event.currentTarget.id;
-        // const projecItems = document.querySelectorAll('.projectcard__container');
-        // projecItems.forEach(projectItem =>
-        //     projectItem.id === selectedProject ? projectItem.classList.toggle('rotate') : projectItem.classList.remove('rotate'))
-    }
     const tecnologies = tags.split(',')
 
     return (
-        <div className="projectcard__container" id={id} onClick={flipCard}>
+        <div className="projectcard__container" id={id}>
             <div className="picture__container">
                 <img src={source} alt={name} />
             </div>
@@ -26,6 +20,7 @@ const ProjectCard = (props) => {
                 </div>
             </div>
             <div className="back">
+                <p>{description}</p>
                 <ul className="project__description">{tecnologies.map(tecnology => <li key={tecnology}>{tecnology}</li>
                 )}</ul>
             </div>

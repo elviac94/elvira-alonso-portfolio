@@ -9,7 +9,7 @@ const Button = (props) => {
     }
 
     return (
-        <button type="button" name={buttonName} onClick={getButtonName} >{buttonName}</button>
+        <button type="button" name={buttonName} onClick={getButtonName}>{buttonName}</button>
     )
 }
 export default Button;

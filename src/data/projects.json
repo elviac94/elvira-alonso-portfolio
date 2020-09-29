@@ -3,7 +3,7 @@
         {
             "id":1,
             "name":"Code con Code",
-            "source":"../images/series-finder-js.png",
+            "source":"../images/metafora-equipo_41910-355.jpg",
             "tags":"HTML5,CSS,SASS,Responsive",
             "description":"Web responsive de desarrolladoras front-end junior",
             "URL": "https://github.com/elviac94/project-promo-i-module-1-team-1-afternoon",
@@ -21,7 +21,7 @@
         {
             "id":3,
             "name":"Series finder",
-            "source":"../images/series-finder-js.png",
+            "source":"../images/tele.jpg",
             "tags":"HTML5,CSS,SASS,Responsive,JavaScript,API-Rest",
             "description":"Buscador de series, donde también puedes crear una lista con tus favoritas ",
             "URL": "https://github.com/elviac94/modulo-2-evaluacion-final-elviac94",
@@ -39,7 +39,7 @@
         {
             "id":5,
             "name":"Buscador de personajes Rick & Morty",
-            "source":"../images/rick-morty.png",
+            "source":"../images/rick_morty_serie.jpg",
             "tags":"React,CSS,SASS,Responsive",
             "description":"Buscador de personajes de serie de rick y morty por nombre",
             "URL": "https://github.com/elviac94/modulo-3-evaluacion-final-elviac94",

@@ -13,7 +13,7 @@
   font-size: 12px;
   height: 180px;
   background-color: #EE7164;
-  box-shadow: 2px 0px 2px 2px #c4bcc4;
+  box-shadow: 0 12px 10px -8px #c4bcc4;
 }
 
 .projectcard__container *,
@@ -118,13 +118,14 @@
   letter-spacing: 1.5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   height: 100px;
 
   & p{
     width: 80%;
     margin-left: 5px;
+    margin-bottom: 10px;
 
   }
 

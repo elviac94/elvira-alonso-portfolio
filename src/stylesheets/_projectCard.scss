@@ -3,7 +3,6 @@
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  // margin: 10px;
   min-width: 230px;
   max-width: 400px;
   width: 50%;
@@ -12,7 +11,7 @@
   text-align: center;
   font-size: 12px;
   height: 180px;
-  background-color: #EE7164;
+  background-color: black;
   box-shadow: 0 12px 10px -8px #c4bcc4;
 }
 
@@ -31,10 +30,9 @@
   backface-visibility: hidden;
   vertical-align: top;
   opacity: 0.9;
-}
-
-.picture__container img{
-  width: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projectcard__container .front{
@@ -96,14 +94,6 @@
   font-weight: 400;
 }
 
-// .projectcard__container h4 {
-//   display: block;
-//   font-weight: 700;
-//   background-color: #ffffff;
-//   padding: 5px 10px;
-//   color: #000000;
-// }
-
 .projectcard__container .back {
   position: absolute;
   bottom: 42%;
@@ -139,8 +129,8 @@
   }
 }
 
-.projectcard__container:hover img,
-.projectcard__container.hover img {
+.projectcard__container:hover .picture__container,
+.projectcard__container.hover .picture__container {
   zoom: 1;
   filter: alpha(opacity=35);
   -webkit-opacity: 0.35;

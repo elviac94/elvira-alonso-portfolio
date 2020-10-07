@@ -7,8 +7,7 @@ const ProjectCard = (props) => {
 
     return (
         <div className="projectcard__container" id={id}>
-            <div className="picture__container">
-                <img src={source} alt={name} />
+            <div className="picture__container" style={{backgroundImage: `url(${source})`}}>
             </div>
             <div className="front">
                 <div className="front__projects">

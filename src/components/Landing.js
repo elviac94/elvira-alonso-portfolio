@@ -15,10 +15,14 @@ const InitialPage = (props) => {
             />
 
             <Typed className="landing__job"
-                strings={['Front-end Developer']}
+                strings={['Front-end Developer', 'I programming with JavaScript']}
                 typeSpeed={60}
                 backSpeed={70}
                 loop />
+            
+            <div className="landing__container--image">
+                <img src="../images/developer.jpg" title="desarrolladora" alt="desarrolladora"></img>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,12 @@
+{
+    "sliders":[
+        {
+            "name":"Developer",
+            "URL":"../images/developer.jpg"
+        },
+        {
+            "name":"Scrum",
+            "URL":"../images/scrum.jpg"
+        }
+    ]
+}

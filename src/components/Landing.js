@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typed from 'react-typed';
+import sliders from '../data/sliders.json';
+import Slider from './Slider';
 
 
 const InitialPage = (props) => {
     const { onShow } = props;
+    
 
     useEffect(() => onShow('home'))
 
@@ -19,9 +22,18 @@ const InitialPage = (props) => {
                 typeSpeed={60}
                 backSpeed={70}
                 loop />
-            
-            <div className="landing__container--image">
-                <img src="../images/developer.jpg" title="desarrolladora" alt="desarrolladora"></img>
+
+            <div className="slider__container">
+                <ul className="slider__container--list">
+                    {sliders.sliders.map(slider => 
+                        <li className="slider__element" key={slider.name}>
+                        <Slider
+                            name={slider.name}
+                            image={slider.URL}
+                        />
+                    </li>
+                    )}
+                </ul>
             </div>
         </div>
     )

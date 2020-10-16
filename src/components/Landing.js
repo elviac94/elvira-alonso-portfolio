@@ -6,7 +6,6 @@ import Slider from './Slider';
 
 const InitialPage = (props) => {
     const { onShow } = props;
-    
 
     useEffect(() => onShow('home'))
 
@@ -25,13 +24,13 @@ const InitialPage = (props) => {
 
             <div className="slider__container">
                 <ul className="slider__container--list">
-                    {sliders.sliders.map(slider => 
+                    {sliders.sliders.map(slider =>
                         <li className="slider__element" key={slider.name}>
-                        <Slider
-                            name={slider.name}
-                            image={slider.URL}
-                        />
-                    </li>
+                            <Slider
+                                name={slider.name}
+                                image={slider.URL}
+                            />
+                        </li>
                     )}
                 </ul>
             </div>

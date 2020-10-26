@@ -1,7 +1,30 @@
 .footer__container{
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
 
     & .footer__copyrigth{
-        color: white;
+        color: #912e6e;
+    }
+
+    & .rrss__container{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        padding: 2px;
+
+        & a{
+            display: block;
+            width: auto;
+
+            & img{
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }

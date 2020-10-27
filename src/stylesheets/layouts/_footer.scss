@@ -5,9 +5,12 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
+    height: 60px;
 
     & .footer__copyrigth{
         color: #912e6e;
+        padding: 4px;
+        height: 30px;
     }
 
     & .rrss__container{
@@ -16,10 +19,18 @@
         width: 80%;
         justify-content: space-around;
         padding: 2px;
+        height: 30px;
 
         & a{
             display: block;
             width: auto;
+
+            &:hover{
+                transform: rotate(20deg);
+                border: solid 2px #912e6e;
+                border-radius: 5px;
+                padding: 1px;
+            }
 
             & img{
                 width: 20px;

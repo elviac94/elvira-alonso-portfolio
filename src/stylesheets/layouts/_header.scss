@@ -1,24 +1,25 @@
 .header__container{
     background-color: #FEFEFE;
-    color: #912e6e;
+    color: $darkFontColor;
     text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
     width: 100%;
-    height: 75px;
-    margin-bottom: 20px;
+    height: 10vh;
+    
     
     & .header__list{
         width: 100%;
-        height: 75px;
+        height: 10vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
         & .header__list--link{
             text-decoration: none;
-            color: #912e6e;
+            color: $darkFontColor;
             cursor: pointer;
             font-weight: bold;
-            background: linear-gradient(#912e6e,#912e6e);
+            background: linear-gradient($darkFontColor,$darkFontColor);
             background-position: 0% 100%;
             background-repeat: no-repeat;
             background-size: 0% 2px;
@@ -28,7 +29,7 @@
         .header__list--link:focus,
         .header__list--link:active{
             background-size: 100% 2px;
-            color: #912e6e;
+            color: $darkFontColor;
             opacity: .5;
             transform: scale3d(0.9, 0.9, 1)
         }

@@ -1,18 +1,29 @@
-.landing__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 500px;
-    width: 100%;
+.landing__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  height: 80vh;
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  color: $darkFontColor;
 
-    & .landing__name{
-        color: #912e6e ;
-        display: block;
-        margin-bottom: 5px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        font-size: 24px;
-      }
+  & p {
+    font-size: 22px;
+    
+
+    & .landing__name {
+      display: block;
+      font-weight: bold;
+      font-size: 26px;
+      text-transform: capitalize;
+      margin-top: 15px;
+    }
   }
-  
-  
+
+  & .landing__job {
+    display: block;
+    font-size: 22px;
+  }
+}

@@ -5,10 +5,10 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-    height: 60px;
+    height: 10vh;
 
     & .footer__copyrigth{
-        color: #912e6e;
+        color: $darkFontColor;
         padding: 4px;
         height: 30px;
     }
@@ -27,7 +27,7 @@
 
             &:hover{
                 transform: rotate(20deg);
-                border: solid 2px #912e6e;
+                border: solid 2px $darkFontColor;
                 border-radius: 5px;
                 padding: 1px;
             }

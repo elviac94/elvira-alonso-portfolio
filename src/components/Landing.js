@@ -11,13 +11,9 @@ const InitialPage = (props) => {
 
     return (
         <div className="landing__container">
-            <Typed className="landing__name" strings={['Elvira María Alonso Cervilla']}
-                typeSpeed={80}
-                cursorChar={''}
-            />
-
+            <p>Hello I'm <span className="landing__name">elvira maría alonso cervilla</span></p>
             <Typed className="landing__job"
-                strings={['Front-end Developer', 'I programming with JavaScript']}
+                strings={['Front-end Developer', 'I develop with JavaScript and React.js']}
                 typeSpeed={60}
                 backSpeed={70}
                 loop />

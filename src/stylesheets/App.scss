@@ -1,4 +1,5 @@
 @import './base/normalize';
+@import './utils/variables';
 @import './layouts/header';
 @import './layouts/footer';
 @import './layouts/landing';
@@ -9,7 +10,7 @@
 
 .App {
   text-align: center;
-  background-color: #FDF1F0;
+  background-color: $standardBg;
   width: 100%;
   min-height: 100vh;
   display: flex;

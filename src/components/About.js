@@ -17,8 +17,7 @@ const About = (props) => {
             <div className="technicals__container">
                 <h3 className="technicals__title">technicals skills</h3>
                 {<ul className="technicals__list">
-                    {technicalsSkills.split(',')
-                        .map(skill => <li>{skill}</li>)}
+                    {technicalsSkills.map(skill => <li><img src={skill.pic} alt={skill.tecnology}/></li>)}
                 </ul>}
             </div>
             <div className="softs__container">

@@ -14,4 +14,29 @@
         text-align: justify;
         margin-bottom: 5px;
     }
+
+    & .technicals__container{
+        width: 85%;
+
+        & .technicals__title{
+            text-transform: capitalize;
+        }
+
+        & .technicals__list{
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            & li{
+                width: 32px;
+                height: 32px;
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

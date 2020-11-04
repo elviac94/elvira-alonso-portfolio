@@ -10,7 +10,7 @@
     
     & p{
         width: 85%;
-        font-size: 16px;
+        font-size: 15px;
         text-align: justify;
         margin-bottom: 5px;
     }
@@ -30,12 +30,32 @@
             flex-wrap: wrap;
 
             & li{
-                width: 32px;
-                height: 32px;
+                width: 28px;
+                height: 28px;
 
                 & img{
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    & .softs__container{
+        width: 85%;
+
+        & .softs__title{
+            text-transform: capitalize;
+        }
+
+        & .softs__list{
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            & li{
+                font-size: 15px;
             }
         }
     }

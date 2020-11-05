@@ -7,6 +7,11 @@
   justify-content: space-around;
   align-items: center;
 
+  @include forTablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   & .about__texts {
     width: 85%;
 
@@ -15,6 +20,10 @@
       font-size: 15px;
       text-align: justify;
       margin-bottom: 5px;
+
+      @include forTablet{
+        font-size: 18px;
+      }
     }
   }
 
@@ -24,6 +33,10 @@
     height: 30px;
     border-radius: 15px;
     color: $standardBg;
+
+    @include forTablet {
+      order: 3;
+    }
   }
 
   & .technicals__container {
@@ -32,9 +45,19 @@
     flex-direction: column;
     align-items: center;
     animation: show 4s;
+    max-width: 280px;
+
+    @include forTablet {
+      width: 50%;
+      max-width: none;
+    }
 
     & .technicals__title {
       text-transform: capitalize;
+
+      @include forTablet{
+        font-size: 20px;
+      }
     }
 
     & .technicals__list {
@@ -44,10 +67,19 @@
       flex-direction: row;
       flex-wrap: wrap;
 
+      @include forTablet {
+        max-width: 280px;
+      }
+
       & li {
         width: 28px;
         height: 28px;
         margin-right: 2px;
+
+        @include forTablet {
+          width: 32px;
+          height: 32px;
+        }
 
         & img {
           width: 100%;
@@ -60,9 +92,23 @@
   & .softs__container {
     width: 85%;
     animation: show 4s;
+    max-width: 280px;
+
+    @include forTablet {
+      width: 50%;
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     & .softs__title {
       text-transform: capitalize;
+
+      @include forTablet{
+        font-size: 20px;
+      }
     }
 
     & .softs__list {
@@ -72,14 +118,26 @@
       flex-direction: row;
       flex-wrap: wrap;
 
+      @include forTablet {
+        max-width: 280px;
+      }
+
       & li {
         font-size: 15px;
         margin-right: 4px;
+
+        @include forTablet{
+          font-size: 18px;
+        }
       }
     }
   }
 }
-@keyframes show{
-  0%{opacity: .1;}
-  100%{opacity: 1;}
+@keyframes show {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

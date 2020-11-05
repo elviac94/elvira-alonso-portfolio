@@ -21,18 +21,23 @@
       text-align: justify;
       margin-bottom: 5px;
 
-      @include forTablet{
+      @include forTablet {
         font-size: 18px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
       }
     }
   }
 
   & .resume__button {
     background-color: $darkFontColor;
-    width: 80px;
+    width: 90px;
     height: 30px;
     border-radius: 15px;
     color: $standardBg;
+    font-family: $textFont;
 
     @include forTablet {
       order: 3;
@@ -55,8 +60,12 @@
     & .technicals__title {
       text-transform: capitalize;
 
-      @include forTablet{
+      @include forTablet {
         font-size: 20px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
       }
     }
 
@@ -71,6 +80,10 @@
         max-width: 280px;
       }
 
+      @include forDesktop {
+        max-width: 400px;
+      }
+
       & li {
         width: 28px;
         height: 28px;
@@ -79,6 +92,11 @@
         @include forTablet {
           width: 32px;
           height: 32px;
+        }
+
+        @include forDesktop {
+          width: 50px;
+          height: 50px;
         }
 
         & img {
@@ -106,8 +124,12 @@
     & .softs__title {
       text-transform: capitalize;
 
-      @include forTablet{
+      @include forTablet {
         font-size: 20px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
       }
     }
 
@@ -122,12 +144,19 @@
         max-width: 280px;
       }
 
+      @include forDesktop {
+        max-width: 400px;
+      }
+
       & li {
         font-size: 15px;
         margin-right: 4px;
 
-        @include forTablet{
+        @include forTablet {
           font-size: 18px;
+        }
+        @include forDesktop {
+          font-size: 24px;
         }
       }
     }

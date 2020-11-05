@@ -29,7 +29,6 @@ const Header = (props) => {
                     <Link className="header__list--link " to='projects'>
                         <li className="header__list--work">Work</li>
                     </Link>
-                    <li className="header__list--contact">Contact</li>
                 </ul>
             </nav>
         </header>

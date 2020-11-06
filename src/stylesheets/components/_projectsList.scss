@@ -6,14 +6,14 @@
     justify-content: flex-start;
     align-items: center;
 
-    @media all and (min-width:768px){
-        display: flex;
+    @include forTablet {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
-        min-height: 500px;
-    }
+        min-height: 425px;
+      }
+
 
     & .projectCard__parentContainer{
          width: 100%;
@@ -23,11 +23,14 @@
          justify-content: center;
          align-items: center;
          height: 180px;
-        //  -webkit-perspective: 1000px;
-        //  perspective: 1000px;
-        //  position: relative;
-        //  margin: 10px auto;
-        //  border: solid black 3px;
+
+         @include forTablet{
+            width: 50%;
+         }
+
+         @include forDesktop{
+             width: 33%;
+         }
 
     }
 }

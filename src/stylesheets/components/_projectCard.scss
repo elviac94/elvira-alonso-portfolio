@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   min-width: 230px;
-  max-width: 400px;
+  max-width: 300px;
   width: 50%;
   border-radius: 8px;
   color: #ffffff;
@@ -30,7 +30,6 @@
   backface-visibility: hidden;
   vertical-align: top;
   opacity: 0.9;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,6 +39,8 @@
   top: 58%;
   left: 25px;
   padding: 5px 10px 10px;
+  background-color: #000000a5;
+  border-radius: 8px;
 }
 
 .projectcard__container .front::before,
@@ -102,7 +103,6 @@
   max-width: 400px;
   text-align: left;
   opacity: 0;
-  // padding: 5px 60px 5px 10px;
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -166,6 +166,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 85px;
 
   .fas.fa-code{
     display: block;

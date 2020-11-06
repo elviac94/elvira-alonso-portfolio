@@ -1,0 +1,20 @@
+/* COLORS */
+$standardBg:#FDF1F0;
+$darkFontColor:#912e6e;
+$grayShadow:#c4bcc4;
+$textFont: "Nunito", sans-serif;
+
+
+/* BREAKPOINTS */
+$tablet:768px;
+$desktop:1200px;
+
+
+/* MIXINS */
+@mixin forTablet {
+    @media all and (min-width:$tablet){@content;}
+}
+
+@mixin forDesktop {
+    @media all and (min-width:$desktop){@content;}
+}

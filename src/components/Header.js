@@ -1,32 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-
-    const toggleHidden = (event) => {
-        const option = event.currentTarget.className
-        const headerOptions = document.querySelectorAll('.header__list--link > li');
-        headerOptions.forEach(headerOption => {
-            if (headerOption.className === option) {
-                headerOption.parentElement.classList.add('hidden')
-            } else {
-                headerOption.parentElement.classList.remove('hidden')
-            }
-        })
-    }
+const Header = (props) => {
+    const { selection } = props;
+    useEffect(() => {
+        setTimeout(() => {
+            const headerOptions = document.querySelectorAll('.header__list--link > li');
+            headerOptions.forEach(headerOption => {
+                if (headerOption.className.includes(selection)) {
+                    headerOption.parentElement.classList.add('hidden')
+                } else {
+                    headerOption.parentElement.classList.remove('hidden')
+                }
+            })
+        }, 400)
+    })
 
     return (
         <header className="header__container">
             <nav className="header__menu">
                 <ul className="header__list">
-                    <Link className="header__list--link hidden" to='/'>
-                        <li className="header__list--home" onClick={toggleHidden}>Home</li>
+                    <Link className="header__list--link " to='/'>
+                        <li className="header__list--home">Home</li>
                     </Link>
-                    <li className="header__list--about" onClick={toggleHidden}>About</li>
-                    <Link className="header__list--link" to='projects'>
-                        <li className="header__list--work" onClick={toggleHidden}>Work</li>
+                    <Link className="header__list--link " to='/about'>
+                        <li className="header__list--about">About</li>
                     </Link>
-                    <li className="header__list--contact" onClick={toggleHidden}>Contact</li>
+                    <Link className="header__list--link " to='projects'>
+                        <li className="header__list--work">Work</li>
+                    </Link>
                 </ul>
             </nav>
         </header>

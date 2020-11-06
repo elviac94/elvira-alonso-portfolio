@@ -1,0 +1,22 @@
+button{
+    background-color: $darkFontColor;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    color: $standardBg;
+    border: $darkFontColor;
+    box-shadow: 0 12px 10px -8px $grayShadow;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 12px;
+
+    &:hover{
+        transform: scale(1.10,1.10);
+    }
+    &:active {
+        box-shadow: none;
+        background-color: black;
+        border:black;
+    }
+}

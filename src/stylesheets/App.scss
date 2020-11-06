@@ -1,20 +1,27 @@
-@import './normalize.scss';
-@import './header.scss';
-@import './footer.scss';
-@import './projectsList';
-@import './projectCard';
+@import './base/normalize';
+@import './utils/variables';
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/landing';
+@import './components/projectsList';
+@import './components/projectCard';
+@import './components/about';
+@import './components/button';
+@import './components/slider';
 
 .App {
   text-align: center;
-  background-color: palevioletred;
+  background-color: $standardBg;
   width: 100%;
   min-height: 100vh;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.landing__name{
-  color: white  ;
-  display: block;
-  margin-bottom: 5px;
-}
+
+
+
+
+
 
 

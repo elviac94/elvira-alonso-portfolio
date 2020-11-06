@@ -1,0 +1,30 @@
+.slider__container{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    max-width: 300px;
+  
+    & .slider__container--list{
+      width: 200%;
+      border-radius: 12px;
+      display: flex;
+      padding: 0;
+      animation: change 10s infinite alternate;
+  
+      & .slider__element{
+        width: 100%;
+  
+        & img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @keyframes change{
+     0% {margin-left: 0;}
+     40% {margin-left: 0;}
+  
+     50% {margin-left: -100%;}
+     100% { margin-left: -100%;}
+  }

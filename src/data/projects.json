@@ -3,7 +3,7 @@
         {
             "id":1,
             "name":"Code con Code",
-            "source":"../images/metafora-equipo_41910-355.jpg",
+            "source":"./images/metafora-equipo_41910-355.jpg",
             "tags":"HTML5,CSS,SASS,Responsive,Gulp",
             "description":"Web responsive that contains information about frontend developers.",
             "URL": "https://github.com/elviac94/project-promo-i-module-1-team-1-afternoon",
@@ -12,7 +12,7 @@
         {
             "id":2,
             "name":"Awesome Profile Cards",
-            "source":"../images/reactive-palettes.png",
+            "source":"./images/reactive-palettes.png",
             "tags":"HTML5,CSS,SASS,Responsive,JavaScript",
             "description":"Website of a generator of customizable business cards, shareable on twitter.",
             "URL": "https://github.com/elviac94/project-promo-i-module-2-team-3-afternoon",
@@ -21,7 +21,7 @@
         {
             "id":3,
             "name":"Series finder",
-            "source":"../images/series-finder-js.png",
+            "source":"./images/series-finder-js.png",
             "tags":"HTML5,CSS,SASS,Responsive,JavaScript,API-Rest",
             "description":"Series finder website, where you can also create a list with your favorites.",
             "URL": "https://github.com/elviac94/modulo-2-evaluacion-final-elviac94",
@@ -30,7 +30,7 @@
         {
             "id":4,
             "name":"Legacy code project",
-            "source":"../images/reactive-palettes.png",
+            "source":"./images/reactive-palettes.png",
             "tags":"React,CSS,SASS,Responsive",
             "description":" Website of a business card generator starting from a native JavaScript code and migrating it to React",
             "URL": "https://github.com/elviac94/project-promo-i-module-3-team-4-afternoon",
@@ -39,7 +39,7 @@
         {
             "id":5,
             "name":"Rick & Morty characters searcher",
-            "source":"../images/rick.png",
+            "source":"./images/rick.png",
             "tags":"React,CSS,SASS,Responsive",
             "description":"Web  developed with React, and  connected to Rick & Morty API,filtering for character and using react-router.",
             "URL": "https://github.com/elviac94/modulo-3-evaluacion-final-elviac94",
@@ -48,7 +48,7 @@
         {
             "id":6,
             "name":"Marvel's characters searcher",
-            "source":"../images/marvel.png",
+            "source":"./images/marvel.png",
             "tags":"React,CSS,SASS,Responsive",
             "description":"Web  developed with React, and  connected to Marvel API. In the request you can filter by character.",
             "URL": "https://github.com/elviac94/marvel-character-search",

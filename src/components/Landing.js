@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Typed from 'react-typed';
 import sliders from '../data/sliders.json';
 import Slider from './Slider';

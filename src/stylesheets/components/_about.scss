@@ -1,0 +1,172 @@
+.about__container {
+  width: 100%;
+  min-height: 80vh;
+  font-family: $textFont;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @include forTablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  & .about__texts {
+    width: 85%;
+
+    & p {
+      width: 85%;
+      font-size: 15px;
+      text-align: justify;
+      margin-bottom: 5px;
+
+      @include forTablet {
+        font-size: 18px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
+      }
+    }
+  }
+
+  & .resume__button {
+    background-color: $darkFontColor;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    color: $standardBg;
+    font-family: $textFont;
+
+    @include forTablet {
+      order: 3;
+    }
+  }
+
+  & .technicals__container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: show 4s;
+    max-width: 280px;
+
+    @include forTablet {
+      width: 50%;
+      max-width: none;
+    }
+
+    & .technicals__title {
+      text-transform: capitalize;
+
+      @include forTablet {
+        font-size: 20px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
+      }
+    }
+
+    & .technicals__list {
+      width: 65%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @include forTablet {
+        max-width: 280px;
+      }
+
+      @include forDesktop {
+        max-width: 400px;
+      }
+
+      & li {
+        width: 28px;
+        height: 28px;
+        margin-right: 2px;
+
+        @include forTablet {
+          width: 32px;
+          height: 32px;
+        }
+
+        @include forDesktop {
+          width: 50px;
+          height: 50px;
+        }
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  & .softs__container {
+    width: 85%;
+    animation: show 4s;
+    max-width: 280px;
+
+    @include forTablet {
+      width: 50%;
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .softs__title {
+      text-transform: capitalize;
+
+      @include forTablet {
+        font-size: 20px;
+      }
+
+      @include forDesktop {
+        font-size: 24px;
+      }
+    }
+
+    & .softs__list {
+      width: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @include forTablet {
+        max-width: 280px;
+      }
+
+      @include forDesktop {
+        max-width: 400px;
+      }
+
+      & li {
+        font-size: 15px;
+        margin-right: 4px;
+
+        @include forTablet {
+          font-size: 18px;
+        }
+        @include forDesktop {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

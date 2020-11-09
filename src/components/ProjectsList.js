@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import Button from './Button';
+import ScrollToTop from './ScrollToTop';
 
 
 const ProjectsList = (props) => {
@@ -35,6 +36,7 @@ const ProjectsList = (props) => {
                         />
                     </li>)}
             </ul>
+         <ScrollToTop/>
         </>
     )
 }

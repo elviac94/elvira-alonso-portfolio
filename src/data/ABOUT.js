@@ -10,7 +10,7 @@ import mysql from '../assets/icons/mysql.svg';
 import git from '../assets/icons/git.svg';
 
 const ABOUT = {
-    text: "I am a frontend developer that enjoy solving code problems, and learning about new technologies. Before of this, I worked a time the customer service sector, this experience gave me more skills to deal with people like  empathy and assertiveness. My hobbies are to solve sudokus, play games and to read crime novels",
+    text: "I am a frontend developer that enjoy solving code problems, and learning about new technologies. Before this, I worked for a while the customer service sector, this experience gave me more skills to deal with people like  empathy and assertiveness. My hobbies are to solve sudokus, play games and to read crime novels",
     skills: {
         technicals:[
             {

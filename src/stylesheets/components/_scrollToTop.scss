@@ -1,0 +1,19 @@
+.scroll--button{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: $darkFontColor;
+    margin-bottom: 10px;
+    position: fixed;
+    top: calc(100vh - 14vh);
+    left: calc(100vw - 10vw);
+
+    @include forTablet{
+        top:  calc(100vh - 16vh);
+        left: calc(100vw - 8vw);
+    }
+
+    @include forDesktop{
+        display: none;
+    }
+}

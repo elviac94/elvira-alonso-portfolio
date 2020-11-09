@@ -11,7 +11,6 @@ import About from './About';
 
 const App = () => {
 
-  const [data, setData] = useState(projects.projects);
   const [selection, setSelection] = useState('home')
 
   const componentShown = (component) => {
@@ -30,7 +29,7 @@ const App = () => {
         <Route path='/projects'>
           <ProjectsList
             onShow={componentShown}
-            data={data}
+            data={projects.projects}
           />
         </Route>
         <Route  path='/about'>

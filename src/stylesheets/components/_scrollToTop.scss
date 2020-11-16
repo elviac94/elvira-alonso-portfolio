@@ -17,3 +17,9 @@
         display: none;
     }
 }
+
+@media (min-width:768px) and (min-height:850px){
+    .scroll--button{
+        top:calc(100vh - 30vh);
+    }
+}

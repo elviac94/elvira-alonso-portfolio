@@ -59,6 +59,7 @@
 
     & .technicals__title {
       text-transform: capitalize;
+      margin-bottom: 3px;
 
       @include forTablet {
         font-size: 20px;
@@ -123,6 +124,7 @@
 
     & .softs__title {
       text-transform: capitalize;
+      margin-bottom: 3px;
 
       @include forTablet {
         font-size: 20px;
@@ -151,6 +153,7 @@
       & li {
         font-size: 15px;
         margin-right: 4px;
+        color: $darkFontColor;
 
         @include forTablet {
           font-size: 18px;

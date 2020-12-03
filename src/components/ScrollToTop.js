@@ -5,6 +5,6 @@ const ScrollToTop = () =>{
 
     const toGoUp=()=>window.scrollTo(0,0)
 
-return(<div className="scroll--button" onClick={toGoUp}><img src={ArrowUP}/></div>)
+return(<div className="scroll--button" onClick={toGoUp}><img src={ArrowUP} alt="arrow"/></div>)
 }
 export default ScrollToTop;

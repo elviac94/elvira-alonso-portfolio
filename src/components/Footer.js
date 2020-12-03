@@ -8,7 +8,7 @@ import email from '../assets/icons/email.svg';
 const Footer = () => {
     return (
         <footer className="footer__container">
-            <small className="footer__copyrigth">&copy; Elvira María Alonso, 2020</small>
+            <small className="footer__copyrigth">&copy; 2020 developed by Elvira Maíra Alonso Cervilla</small>
             <ul className="rrss__container">
                 <li><a href="https://twitter.com/elviraalonsoc" target="blank" aria-label="Twitter">
                     <img src={bird} alt="twitter-logo" title="Twitter" /></a></li>
